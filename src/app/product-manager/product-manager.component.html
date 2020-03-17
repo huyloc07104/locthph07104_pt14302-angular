@@ -8,4 +8,18 @@
               <th>Action</th>
             </tr>
           </thead>
+             <thead>
+            <tr *ngFor="let product of products">
+              <th><a href="#">{{product.id}}</a></th>
+              <th><a href="#">{{product.name}}</a></th>
+              <th><p class="card-text">{{product.desc}}</p></th>
+              <th>
+                <button class="btn btn-primary" (click)="showDetail(product)">Hiển Thị</button> &nbsp;
+              <button class="btn btn-primary" (click)="removeItem(product.id)">xóa</button>
+              </th>
+            </tr>
+          </thead>
         </table>
+        <div class="detail" *ngIf="selected">
+  {{selected.name}}
+</div>
