@@ -1,6 +1,27 @@
-import { Product } from './Product';
-export const data: Product[] = [
-    {id : 1, name: 'product 1', desc: 'Mo ta san pham 1'},// product
-    {id : 2, name: 'product 2', desc: 'Mo ta san pham 2'}, // product
-    {id : 55, name: 'product 3', desc: 'Mo ta san pham 3'}, //product
+import { Product } from './Product'
+export const data : Product[] = [
+    {
+        id: 1,
+        name: "Item 1",
+        price: 25.99,
+        desc: "Nội dung mô tả sản phẩm",
+        img: 'https://dummyimage.com/700x400/000/fff',
+        status: true
+    }, // product == 1
+    {
+        id: 2,
+        name: "Item 2",
+        price: 25.99,
+        desc: "Nội dung mô tả sản phẩm",
+        img: 'http://placehold.it/700x400',
+        status: true
+    }, // product
+    {
+        id: 3,
+        name: "Item 3",
+        price: 25.99,
+        desc: "Nội dung mô tả sản phẩm",
+        img: 'http://placehold.it/700x400',
+        status: true
+    } // product
 ]

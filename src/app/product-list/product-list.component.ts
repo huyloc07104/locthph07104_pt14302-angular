@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { product } from '../Product';
+import { ProductService } from '../services/product.service';
 
 @Component({
   selector: 'app-product-list',
@@ -6,10 +8,29 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
+  products: product[];
+  constructor(
+    private productService: ProductService,
+  ) { }
 
-  constructor() { }
-
-  ngOnInit() {
+  ngOnInit(): void {
+    this.products = this.productService.getProducts();
   }
 
+
+
+  
+  // products;
+  // selected: Product;
+  // showDetail(product){
+  //   this.selected = product;
+  //   console.log(this.selected);
+  // }
+  removeItem(id){
+    this.products = this.productService.removeProduct(id);
+    // this.products = this.products.filter(product => product.id != id)
+  }
+  addToCart(){
+    
+  }
 }
