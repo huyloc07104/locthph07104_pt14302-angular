@@ -9,6 +9,7 @@ import { ServicesComponent } from "./services/services.component";
 import { ContactComponent } from "./contact/contact.component";
 import { ProductDetailComponent } from "./product-detail/product-detail.component";
 import { ProductManagerComponent } from "./product-manager/product-manager.component";
+import { ProductaddComponent } from "./productadd/productadd.component";
 
 const routes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full" },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: "product", component: ProductListComponent },
   { path: "product/manager", component: ProductManagerComponent },
   { path: "product/add", component: AddProductComponent },
+  {path : "add", component:ProductaddComponent },
   { path: "product/detail/:id", component: ProductDetailComponent },
   { path: "about", component: AboutComponent },
   { path: "services", component: ServicesComponent },
