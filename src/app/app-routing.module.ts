@@ -13,10 +13,10 @@ const routes: Routes = [
   {path :"", redirectTo :"home" ,pathMatch:"full"},
   { path: "home", component: HomeComponent},
   { path: "product", component: ProductListComponent },
-  { path: "product-add", component: AddProductComponent},
-  { path: "product-detail/:id", component: ProductDetailComponent},
+  { path: "product/add", component: AddProductComponent},
+  { path: "product/detail/:id", component: ProductDetailComponent},
   { path: "about", component: AboutComponent},
-  { path: "product-manager", component: ProductManagerComponent},
+  { path: "product/manager", component: ProductManagerComponent},
   { path :"**", redirectTo:"404" ,pathMatch:"full"}
 ];
 
