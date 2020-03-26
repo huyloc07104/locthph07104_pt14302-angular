@@ -11,5 +11,8 @@ export class NotFoundComponent implements OnInit {
 
   ngOnInit() {
   }
+//sao lại mất hết thế này
+//đấy lúc comit xonnayfthees này tạo lại bạn ạ
+//bh xóa cũng k xóa đc cơ
 
 }
