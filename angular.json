@@ -23,6 +23,8 @@
               "src/assets"
             ],
             "styles": [
+              "src/app/css/admin2.css",
+              "src/app/css/admin.css",
               "src/styles.css"
             ],
             "scripts": []

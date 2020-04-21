@@ -15,9 +15,11 @@ import { ManageComponent } from './manage/manage.component';
 import { ProductEditComponent } from './product-edit/product-edit.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { AdminComponent } from './admin/admin.component';
+import { DashbroadComponent } from './dashbroad/dashbroad.component';
 @NgModule({
   imports:      [ BrowserModule,AppRoutingModule, FormsModule,AngularFontAwesomeModule,HttpClientModule ],
-  declarations: [ AppComponent, HelloComponent, HeaderComponent, FooterComponent, HomeComponent, ProductAddComponent, ManageComponent, ProductEditComponent, ProductDetailComponent, ProductListComponent ],
+  declarations: [ AppComponent, HelloComponent, HeaderComponent, FooterComponent, HomeComponent, ProductAddComponent, ManageComponent, ProductEditComponent, ProductDetailComponent, ProductListComponent, AdminComponent, DashbroadComponent ],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
 })
