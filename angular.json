@@ -25,6 +25,10 @@
             "styles": [
               
               "src/app/css/admin.css",
+              "src/app/css/flexslider.css",
+              "src/app/css/font-awesome.css",
+              "src/app/css/sequence-looptheme.css",
+              "src/app/css/style.css",
               "src/styles.css"
             ],
             "scripts": []
