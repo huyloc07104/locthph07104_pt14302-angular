@@ -14,7 +14,7 @@ const routes: Routes = [
  { path: 'admin', component: AdminComponent, 
  children:[
    {path: '', redirectTo: 'dashbroad', pathMatch: 'full'},
-   {path: 'dashbroad', component: DashbroadComponent},
+   {path: 'dashbroad', component: Man},
    {path: 'product',component: ManageComponent},
    ]
    },
