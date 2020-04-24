@@ -64,6 +64,8 @@
   Status:  <input  type="text" name="status" class="form-control"placeholder="Price" [(ngModel)]="product.status">
      <br>
    Img: <input type="text" name="img" class="form-control"placeholder="Price" [(ngModel)]="product.img">
+   <img class="card-img-top" src="{{product.img}}" alt="Card image cap">
+  
      <br>
            <input type="text"      
                     class="form-control"      
@@ -84,5 +86,17 @@
      <button type="submit" class="btn btn-primary" (click)="updateProduct()">Submit</button>
   </div>
  
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{product.img}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{product.name}}</h5>
+    <h5 class="card-title">${{product.price}}</h5>
+    <p class="card-text">{{product.desc}}</p>
+  </div>
+</div>
 </form>
+
+
+
 <app-footer></app-footer> 
