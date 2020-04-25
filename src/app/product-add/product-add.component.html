@@ -18,18 +18,7 @@
       <br>
        <input type="text" name="desc" class="form-control"placeholder="Desc" [(ngModel)]="product.desc">
        <br>
-            <input type="text"      
-                    class="form-control"      
-                    value="{{product.status ? 'In stock' : 'Out stock'}}"
-                    readonly
-                />
-      <br>
-                <input type="checkbox" 
-                  name="status"
-                  class="form-control"
-                  [(ngModel)]="product.status"
-                  checked
-                />
+          <input type="text" name="status" class="form-control"placeholder="status" [(ngModel)]="product.stat">  
                 <br>
         <input type="text" name="img" class="form-control"placeholder="Src" [(ngModel)]="product.img">
     </div>
