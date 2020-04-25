@@ -17,7 +17,7 @@ const routes: Routes = [
     children: [
       { path: "", redirectTo: "dashbroad", pathMatch: "full" },
       { path: "dashbroad", component: ManageComponent },
-      { path: "add", component: ProductAddComponent },
+      { path: "product/add", component: ProductAddComponent },
       { path: "product", component: ManageComponent }
     ]
   },
@@ -28,7 +28,7 @@ const routes: Routes = [
   { path: "product/:id", component: ManageComponent },
 
   { path: "product/edit/:productID", component: ProductEditComponent },
-  { path: "product/detail", component: ProductDetailComponent }
+  { path: "product/detail/:productID", component: ProductDetailComponent }
 ];
 
 @NgModule({

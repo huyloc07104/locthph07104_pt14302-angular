@@ -2,10 +2,12 @@ import { Injectable } from '@angular/core';
 import { Product } from './Product';
 import { HttpClient } from '@angular/common/http';
 import {Observable} from "rxjs";
+import { data } from "./MockData";
+
 @Injectable()
 export class ProductService {
  api = 'https://5e7cdb96a917d70016683f9f.mockapi.io/products';
-  // products = data;
+  products = data;
 
   constructor(
     private http: HttpClient
@@ -16,18 +18,16 @@ export class ProductService {
   }
   getProduct(id): Observable<Product>{
     return this.http.get<Product>(`${this.api}/${id}`);
-    // return this.products.find(product => product.id == id);
+
   }
   removeProduct(id): Observable<Product>{
-    return this.http.get<Product>(`${this.api}/${id}`);
-    // return this.products.filter(product => product.id !== id);
+    return this.http.del<Product>(`${this.api}/${id}`);
+
   }
 
   addProduct(product){
     return this.http.post<Product>(`${this.api}`, product);
-    // const newProduct = { id: 5, ...product};
-    // this.products.push(newProduct);
-    // console.log(this.products)
+
   }
   updateProduct(product){
      return this.http.put<Product>(`${this.api}/${product.id}`, product);
