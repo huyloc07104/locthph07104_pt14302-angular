@@ -44,46 +44,13 @@
                     <div class="col-lg-7 col-md-7">
                         <div class="advanced-search">
                           
-                            <div class="input-group">
-                                <input type="text" placeholder="Search">
-                                <button type="button"><i class="fas fa-search"></i></button>
-                            </div>
+                         
                         </div>
                     </div>
 
 <form class="w-50 mx-auto mt-3" *ngIf="product">
 
-  <div class="form-group">
-    
-   Name: <input type="text" name="name" class="form-control"placeholder="Product Name" [(ngModel)]="product.name">
-   <br>
-   Price: <input type="text" name="price" class="form-control"placeholder="Price" [(ngModel)]="product.price">
-     <br>
- Desc:   <input type="text" name="desc" class="form-control"placeholder="Price" [(ngModel)]="product.desc">
-     <br>
-  Status:  <input  type="text" name="status" class="form-control"placeholder="Price" [(ngModel)]="product.status">
-     <br>
-   Img: <input type="text" name="img" class="form-control"placeholder="Price" [(ngModel)]="product.img">
-  
-     <br>
-           <input type="text"      
-                    class="form-control"      
-                    value="{{product.status ? 'In stock' : 'Out stock'}}"
-                    readonly
-                />
-      <br>
-                <input type="checkbox" 
-                  name="status"
-                  class="form-control"
-                  [(ngModel)]="product.status"
-                  checked
-                />
-                <br>
-  </div>
-
-  <div class="first">
-     <button type="submit" class="btn btn-primary" (click)="updateProduct()">Submit</button>
-  </div>
+ 
  
 
 <div class="card" style="width: 18rem;">
