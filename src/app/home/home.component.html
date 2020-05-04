@@ -32,6 +32,10 @@
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
+      	<button routerLink="/product-list"  type="button"  class="button add-cart" data-toggle="button" >
+        
+                                                                                         Danh Sách Sản Phẩm
+                                                                                </button>
 
 			<body id="home">
 				<div class="wrapper">
@@ -51,7 +55,7 @@
 												<div class="products">
 													<div class="offer">- %20</div>
 													<div class="thumbnail"><a
-															href="details.html"><img src="{{product.img}}" alt="Product Name"></a>
+														routerLink="/product/detail/{{product.id}}"><img src="{{product.img}}" alt="Product Name"></a>
 													</div>
 													<div class="productname">{{product.name}}
 														<i class="fas fa-home"></i></div>
